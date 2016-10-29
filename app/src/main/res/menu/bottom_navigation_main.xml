@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/star"
+        android:enabled="true"
+        android:icon="@drawable/ic_star_border_black_48dp"
+        android:title="TOP"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search_black_48dp"
+        android:title="SEARCH"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/playListOnline"
+        android:enabled="true"
+        android:icon="@drawable/ic_featured_play_list_black_48dp"
+        android:title="Online"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/download"
+        android:enabled="true"
+        android:icon="@drawable/ic_file_download_black_48dp"
+        android:title="download"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/playList"
+        android:enabled="true"
+        android:icon="@drawable/ic_list_black_48dp"
+        android:title="PlayList"
+        app:showAsAction="ifRoom" />
+
+</menu>
