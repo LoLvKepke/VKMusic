@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
             VKScope.NOHTTPS
     };
     private              boolean  isResumed = false;
-    private BottomNavigationView mBottomNavigationView;
     //private boolean isPlayingSong;
     //    private TextView  mTv;
     //    private ActionBar mAb;
@@ -58,13 +57,14 @@ public class MainActivity extends AppCompatActivity {
         //        // Finally, set the newly created TextView as ActionBar custom view
         //        mAb.setCustomView(mTv);
 
-        mBottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_nanigation);
+        BottomNavigationView bottomNavigationView =
+                (BottomNavigationView) findViewById(R.id.bottom_nanigation);
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().add(R.id.container, new PopularFragment()).commit();
         }
 
-        mBottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
